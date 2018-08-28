@@ -1,0 +1,6 @@
+nibabel==2.3.0
+opencv>=3.0.0
+pytorch==0.3.1
+skimage>=0.13.1
+pickle==
+graphviz==0.9
