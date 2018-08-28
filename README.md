@@ -46,7 +46,7 @@ To resume the training from a checkpoint, you can do it as following:
 python main.py --resume True --resumeLoc <checkpoint_file> 
 ``` 
 
-### Step 3: Testing the trained models
+### Step 4: Testing the trained models
 
 #### Compute Dice Score on the validation set
 BRATS'18 measures the accuracy using Dice score for three types of segmentation masks: (1) whole tumour, (2) core mask, and (3) enhancing mask. 
@@ -58,7 +58,7 @@ python ComputeDice.py
 
 **Note:** Please make sure to change the variable names in lines 190-193.
 
-### Step 4: Generating results on the official evaluation and test set
+### Step 5: Generating results on the official evaluation and test set
 
 #### Set-up
  1. Download the evaluation or test data from the Brats'18 website.
@@ -71,7 +71,7 @@ python ComputeDice.py
 .....
  ``` 
 
-#### Results
+## Results on the official evaluation set
 After you are done with the set-up part, you can generate the segmentation results on the official evaluation and test sets using the following script:
 ```
 python VisualizeResults.py 
