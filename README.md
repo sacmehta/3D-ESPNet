@@ -25,10 +25,27 @@ Our system learns about **3.6 million parameters** and achieves the dice score o
 </table>
 
 **Visualizations on the official BRATS'18 validation set**
-
-![](images/brats_val_0.gif)  |  ![](images/brats_val_1.gif)  |  
-![](images/brats_val_2.gif)  |  ![](images/brats_val_3.gif)  |  
-![](images/brats_val_4.gif)  | ![]() |
+<table>
+ <tr width="100%">
+  <td width="33%" align="center">
+    <img src="images/brats_val_0.gif"> 
+  </td>
+  <td width="33%" align="center">
+     <img src="images/brats_val_1.gif"> 
+  </td>
+  <td width="33%" align="center">
+     <img src="images/brats_val_2.gif"> 
+  </td>
+ </tr>
+ <tr >
+  <td width="50%" align="center">
+    <img src="images/brats_val_3.gif" width="66%"> 
+  </td>
+  <td width="50%" align="center">
+     <img src="images/brats_val_4.gif" width="66%"> 
+  </td>
+ </tr>
+</table>
 
 ## Training on the BRATS 2018 dataset
 
