@@ -9,15 +9,15 @@ Our system learns about **3.6 million parameters** and achieves the dice score o
 **Visualizations on the training set**
 
 <table>
- <tr>
-  <td>
-    <img src="images/brats_train_0.gif" width="33%"> 
+ <tr width="100%">
+  <td width="33%">
+    <img src="images/brats_train_0.gif"> 
   </td>
-  <td>
-     <img src="images/brats_train_1.gif" width="33%"> 
+  <td width="33%">
+     <img src="images/brats_train_1.gif"> 
   </td>
-  <td> 
-    <img src="images/brats_train_2.gif" width="33%">
+  <td width="33%"> 
+    <img src="images/brats_train_2.gif">
   </td>
  </tr>
 </table>
