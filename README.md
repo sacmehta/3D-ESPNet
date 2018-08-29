@@ -8,8 +8,8 @@ Our system learns about **3.6 million parameters** and achieves the dice score o
 
 **Visualizations on the training set**
 
-<table align="center">
- <tr width="100%">
+<table>
+ <tr width="100%" style="align:center">
   <td width="45%">
     <img src="images/brats_train_0.gif"> 
   </td>
@@ -17,7 +17,7 @@ Our system learns about **3.6 million parameters** and achieves the dice score o
      <img src="images/brats_train_1.gif"> 
   </td>
  </tr>
- <tr>
+ <tr style="align:center">
   <td colspan=2 width="45%"> 
     <img src="images/brats_train_2.gif">
   </td>
