@@ -113,7 +113,7 @@ python ComputeDice.py
 .....
  ``` 
 
-## Results on the official evaluation set
+## Generate results on the official evaluation set
 After you are done with the set-up part, you can generate the segmentation results on the official evaluation and test sets using the following script:
 ```
 python VisualizeResults.py 
@@ -122,12 +122,6 @@ python VisualizeResults.py
 Please make sure to change the variable names inside the files so that they are pointing to correct data directories and pretrained weight files.
 
 **Note 1:** You do not need to pre-process these images. This is done on the fly inside the ```VisualizeResults.py``` script.
-
-Our model learns about 3.6 million parameters and achieves following dice scores on the official evaluation set (see  (Entry Name: GBMNet) for more details):
-
-| Enhancing Tumor | Whole Tumor | Core Mask |
-| --- | --- | --- |
-| 0.74 | 0.88 | 0.81 |
 
 ## Dependencies
 
