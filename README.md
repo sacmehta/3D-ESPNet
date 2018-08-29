@@ -7,7 +7,20 @@ Below are the segmentation results produced by our method. Results in the first 
 Our system learns about **3.6 million parameters** and achieves the dice score of **0.74, 0.88, and 0.81** for segmenting **enhancing tumour, whole tumour, and core mask** on the official BRATS'18 evaluation set. Please check the [leaderboard](https://www.cbica.upenn.edu/BraTS18/lboardValidation.html) for more details (Our model name is GBMNet). Note that we do not use any additional data for training.
 
 **Visualizations on the training set**
-<img src="images/brats_train_0.gif" width="33%"> <img src="images/brats_train_1.gif" width="33%"> <img src="images/brats_train_2.gif" width="33%">
+
+<table>
+ <tr>
+  <td>
+    <img src="images/brats_train_0.gif" width="33%"> 
+  </td>
+  <td>
+     <img src="images/brats_train_1.gif" width="33%"> 
+  </td>
+  <td> 
+    <img src="images/brats_train_2.gif" width="33%">
+  </td>
+ </tr>
+</table>
 
 **Visualizations on the official BRATS'18 validation set**
 
