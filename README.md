@@ -8,7 +8,7 @@ Our system learns about **3.6 million parameters** and achieves the dice score o
 
 **Visualizations on the training set**
 
-![](images/brats_train_0.gif)
+![](images/brats_train_0.gif =100x100)
 
 ![](images/brats_train_1.gif)
 
