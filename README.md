@@ -17,8 +17,8 @@ Our system learns about **3.6 million parameters** and achieves the dice score o
      <img src="images/brats_train_1.gif"> 
   </td>
  </tr>
- <tr style="align:center">
-  <td colspan=2 width="45%"> 
+ <tr >
+  <td colspan=2 width="45%" style="align:center"> 
     <img src="images/brats_train_2.gif">
   </td>
  </tr>
