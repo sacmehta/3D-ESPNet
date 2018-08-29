@@ -2,6 +2,13 @@
 
 This repository extends the [ESPNet, (ECCV'18)](https://arxiv.org/abs/1803.06815) architecture (also extended to whole slide image (WSI) segmentation in [Y-Net, (MICCAI'18)](https://arxiv.org/pdf/1806.01313.pdf)) to volumetric images. We use the BRATS 2018 dataset for volumetric segmentaiton task.
 
+Below are the segmentation results produced by our method. Results in the first row are on the training set while results in the last two rows are on the official evaluation set for which we do not have the expert markings. 
+
+Our system learns about **3.6 million parameters** and achieves the dice score of **0.74, 0.88, and 0.81** for segmenting **enhancing tumour, whole tumour, and core mask** on the official BRATS'18 evaluation set. Please check the [leaderboard](https://www.cbica.upenn.edu/BraTS18/lboardValidation.html) for more details (Our model name is GBMNet). Note that we do not use any additional data for training.
+
+![](images/brats_train_0.gif)  |  ![](images/brats_train_1.gif)  |  ![](images/brats_train_2.gif)  |
+![](images/brats_val_0.gif)  |  ![](images/brats_val_1.gif)  |  ![](images/brats_val_2.gif)  |
+![](images/brats_val_3.gif)  |  ![](images/brats_val_4.gif)  |  ![](images/brats_val_5.gif)  |
 
 ## Training on the BRATS 2018 dataset
 
@@ -30,7 +37,7 @@ Original            |  Processed (After cropping)
 
 **Option 3:** Use BRATS'17 training data as a validation data. Since BRATS'17 training data has an overlap with BRATS'18, please make sure to remove the overlapping data. 
 
-Since there are very few images for training, we opted for **Option 3**. Repeat all steps in **Step 1** to generate the ```val.txt``` file. 
+Since there are very few images for training, we opted for **Option 3**. Repeat all steps in **Step 1** to generate the ```val.txt``` file.
 
 **Note**: Make sure to update the variable ```writeText = open('val.txt', 'w')```  in the ```gen.py``` file.
 
@@ -81,7 +88,7 @@ Please make sure to change the variable names inside the files so that they are 
 
 **Note 1:** You do not need to pre-process these images. This is done on the fly inside the ```VisualizeResults.py``` script.
 
-Our model learns about 3.6 million parameters and achieves following dice scores on the official evaluation set (see [leaderboard](https://www.cbica.upenn.edu/BraTS18/lboardValidation.html) (Entry Name: GBMNet) for more details):
+Our model learns about 3.6 million parameters and achieves following dice scores on the official evaluation set (see  (Entry Name: GBMNet) for more details):
 
 | Enhancing Tumor | Whole Tumor | Core Mask |
 | --- | --- | --- |

@@ -10,8 +10,9 @@ import nibabel as nib
 import numpy as np
 
 class LoadData:
-    def __init__(self, data_dir, classes, cached_data_file, normVal=1.10):
+    def __init__(self, data_dir, data_dir_val, classes, cached_data_file, normVal=1.10):
         self.data_dir = data_dir
+        self.data_dir_val = data_dir_val
         self.classes = classes
         self.classWeights = np.ones(self.classes, dtype=np.float32)
         self.normVal = normVal
@@ -32,12 +33,13 @@ class LoadData:
             global_hist = np.zeros(self.classes, dtype=np.float32)
 
         no_files = 0
-        with open(self.data_dir + '/' + fileName, 'r') as textFile:
+        data_dir = self.data_dir if trainStg else self.data_dir_val
+        with open(data_dir + '/' + fileName, 'r') as textFile:
             for line in textFile:
                 #line = textFile.read()
                 line_arr = line.split(',')
-                img_file = ((self.data_dir).strip() + '/' + line_arr[0].strip()).strip()
-                label_file = ((self.data_dir).strip() + '/' + line_arr[1].strip()).strip()
+                img_file = ((data_dir).strip() + '/' + line_arr[0].strip()).strip()
+                label_file = ((data_dir).strip() + '/' + line_arr[1].strip()).strip()
 
                 label_img = nib.load(label_file).get_data()
                 # There is no label with value 3 in BRATS dataset. We rename label 4 as 3.

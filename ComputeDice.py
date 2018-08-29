@@ -188,7 +188,7 @@ def segmentVoxelAndComputeDice(imgLoc, model):
 
 if __name__ == '__main__':
     # Change these variables depending upon your settings
-    data_dir = './data/original_brats18_preprocess/'  # evaluate on original data and not the processed one
+    data_dir = './data/original_brats17/'  # evaluate on original data and not the processed one
     val_file = 'val.txt'
     best_model_loc = './pretrained/espnet_3d_brats.pth'
 

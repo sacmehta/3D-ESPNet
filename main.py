@@ -122,7 +122,7 @@ def trainValidateSegmentation(args):
 
     # check if processed data file exists or not
     if not os.path.isfile(args.cached_data_file):
-        dataLoader = ld.LoadData(args.data_dir, args.classes, args.cached_data_file)
+        dataLoader = ld.LoadData(args.data_dir, args.data_dir_val, args.classes, args.cached_data_file)
         data = dataLoader.processData()
         if data is None:
             print('Error while pickling data. Please check.')
@@ -324,7 +324,8 @@ def trainValidateSegmentation(args):
 if __name__ == '__main__':
     parser = ArgumentParser()
     parser.add_argument('--model', default="ESPNet-3D")
-    parser.add_argument('--data_dir', default="./data/original_brats18_preprocess/", help='data directory')
+    parser.add_argument('--data_dir', default="./data/original_brats18_preprocess/", help='data directory for training set')
+    parser.add_argument('--data_dir_val', default="./data/original_brats17_preprocess/", help='data directory for validation set')
     parser.add_argument('--inWidth', type=int, default=128, help='Volume width')
     parser.add_argument('--inHeight', type=int, default=128, help='Volume height')
     parser.add_argument('--inDepth', type=int, default=128, help='Volume depth or channels')
