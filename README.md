@@ -25,6 +25,7 @@ Our system learns about **3.6 million parameters** and achieves the dice score o
 </table>
 
 **Visualizations on the official BRATS'18 validation set**
+
 <table>
  <tr width="100%">
   <td width="33%" align="center">
