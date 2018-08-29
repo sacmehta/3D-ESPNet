@@ -28,13 +28,13 @@ Our system learns about **3.6 million parameters** and achieves the dice score o
 <table>
  <tr width="100%">
   <td width="33%" align="center">
-    <img src="images/brats_val_0.gif"> 
+    <img src="images/brats_val_0.gif" width="66%"> 
   </td>
   <td width="33%" align="center">
-     <img src="images/brats_val_1.gif"> 
+     <img src="images/brats_val_1.gif" width="66%"> 
   </td>
   <td width="33%" align="center">
-     <img src="images/brats_val_2.gif"> 
+     <img src="images/brats_val_2.gif" width="66%"> 
   </td>
  </tr>
  <tr width="100%">
