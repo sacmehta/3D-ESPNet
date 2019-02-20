@@ -1,4 +1,4 @@
-# 3D ESPNet for segmenting brain images [Paper](https://link.springer.com/chapter/10.1007/978-3-030-11726-9_22)
+# 3D ESPNet for segmenting brain images [[Paper](https://link.springer.com/chapter/10.1007/978-3-030-11726-9_22)]
 
 This repository extends the [ESPNet, (ECCV'18)](https://arxiv.org/abs/1803.06815) architecture (also extended to whole slide image (WSI) segmentation in [Y-Net, (MICCAI'18)](https://arxiv.org/pdf/1806.01313.pdf)) to volumetric images. We use the BRATS 2018 dataset for volumetric segmentaiton task.
 
