@@ -128,9 +128,17 @@ Please make sure to change the variable names inside the files so that they are 
 Please see ```requirements.txt``` for the dependencies
 
 ## Citation
-If this work useful for you, please cite the following papers:
+If this work is useful for you, please consider citing the following papers:
 
 ```
+@inproceedings{mehta20193despnet,
+author="Nuechterlein, Nicholas and Mehta, Sachin",
+title="3D-ESPNet with Pyramidal Refinement for Volumetric Brain Tumor Image Segmentation",
+booktitle="Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries",
+year="2019",
+publisher="Springer International Publishing",
+}
+
 @inproceedings{mehta2018ynet,
   title={{Y-Net: Joint Segmentation and Classification for Diagnosis of Breast Biopsy Images}},
   author={Sachin Mehta and Ezgi Mercan and Jamen Bartlett and Donald Weaver and Joann  Elmore and Linda Shapiro},
@@ -139,10 +147,10 @@ If this work useful for you, please cite the following papers:
   organization={Springer}
 }
 
-@article{mehta2018espnet,
+@inproceedings{mehta2018espnet,
   title={ESPNet: Efficient Spatial Pyramid of Dilated Convolutions for Semantic Segmentation},
   author={Sachin Mehta, Mohammad Rastegari, Anat Caspi, Linda Shapiro, and Hannaneh Hajishirzi},
-  journal={European Conference in Computer Vision (ECCV)},
+  booktitle={European Conference in Computer Vision (ECCV)},
   year={2018}
 } 
 ```
